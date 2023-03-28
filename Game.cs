@@ -72,7 +72,7 @@ namespace Voidwalker
             "The knocking continues.\n You look around and find a hole in the wall big enough to crawl through.",
             "You begin to feel a strange familiarity with this place.\n Have you been here before?",
             "You begin to walk down the hallway.",
-            "You look into the hole using your Flashlight. \n You see something glimmer against the light. You reach in and find a knife. \n You open the door and find a hallway with flickering flourescent lights. \n You proceed down the hall.",
+            "You look into the hole using your Flashlight. \n You see something glimmer against the light. You reach in and find a knife.",
             "A foul stench begins to fill the air around you. \n It is almost unbearable. \n You continue... fearing what you might find."
 
         };
