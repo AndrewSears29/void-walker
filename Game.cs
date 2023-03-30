@@ -54,7 +54,7 @@ namespace Voidwalker
                 Console.Clear();
                 Program.Main();
             }
-            else if (input == "2")
+            else
             {
                 Environment.Exit(0);
             }
