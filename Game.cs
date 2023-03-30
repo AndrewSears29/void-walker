@@ -7,8 +7,8 @@ namespace Voidwalker
 {
     public static class Game
     {
-        // StartGame method introduces player to the game and gives them a
-        // choice to wake up or not as well as calls the method to name a character
+        // StartGame method introduces player to the game 
+        // as well as calls the method to name a character
 
         public static string CharacterName = ("Andrew Sears");
         public static void StartGame()
@@ -50,11 +50,11 @@ namespace Voidwalker
 
             if (input == "1")
             {
-                Item.PlayerItems.Clear();
+                PlayerItems.Clear();
                 Console.Clear();
                 Program.Main();
             }
-            else
+            else if (input == "2")
             {
                 Environment.Exit(0);
             }
@@ -272,7 +272,7 @@ namespace Voidwalker
 
 ", "green");
 
-                Item.PlayerItems.Add("knife");
+                PlayerItems.Add("knife");
                 ; Console.WriteLine(PartOne[5]);
                 Console.WriteLine("Press ENTER to continue...");
                 Console.ReadKey();
@@ -374,7 +374,7 @@ namespace Voidwalker
                 Console.WriteLine("Press ENTER to continue...");
                 Console.ReadKey();
 
-                if (Item.PlayerItems.Contains("knife"))
+                if (PlayerItems.Contains("knife"))
                 {
                     Console.WriteLine("You defeat the figure with your newly found knife. Congratulations, you have survived....For now.. Press Enter to continue..");
                     Console.ReadKey();
@@ -393,7 +393,9 @@ namespace Voidwalker
 
 
                 }
-        }
+           
+    }
+        public static List<string> PlayerItems = new List<string>();
     }
 
 }

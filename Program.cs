@@ -17,7 +17,7 @@ namespace Voidwalker
             Console.WriteLine();
             Game.Dialog("Here... Take this.", "red");
             Console.WriteLine();
-            Item.PlayerItems.Add("flashlight");
+            Game.PlayerItems.Add("flashlight");
             Console.WriteLine("You got a Flashlight!");
             Console.WriteLine("Press ENTER to continue...");
             Console.ReadKey();
@@ -25,7 +25,6 @@ namespace Voidwalker
             Game.SecondChoice();
             Game.FinalBattle();
             
-
         }
 
     }
