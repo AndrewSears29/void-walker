@@ -1,21 +1,16 @@
 ﻿using System;
 
 
-// create a loop for game
+
 
 namespace Voidwalker
 {
     public class Program
     {
-        static void Main()
+        public static void Main()
         {
             Game.GameTitle();
             Game.StartGame();
-            Console.WriteLine("Press Any key to continue...");
-            Console.ReadKey();
-            Console.Clear();
-            Console.WriteLine("You hear a voice in the back of your head...");
-            Game.Dialog(Game.CharacterName + ", wake up... It is time...", "red");
             Console.WriteLine();
             Game.Choice();
             Console.ReadKey();
@@ -28,7 +23,8 @@ namespace Voidwalker
             Console.ReadKey();
             Console.Clear();
             Game.SecondChoice();
-            Console.ReadKey();
+            Game.FinalBattle();
+            
 
         }
 
