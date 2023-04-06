@@ -5,8 +5,11 @@
 
 namespace Voidwalker
 {
-    public static class Game
+    public class Game
     {
+
+        
+
         // StartGame method introduces player to the game 
         // as well as calls the method to name a character
 
@@ -143,21 +146,24 @@ namespace Voidwalker
 
         // this method is the choice to wake up or not
 
-        public static void Choice()
+        public static string Choice()
         {
             string input = "";
             Console.WriteLine("Wake up? Y/N");
             input = Console.ReadLine();
             input = input.ToUpper();
 
+
+
+
             if (input == "Y")
             {
-                Game.Dialog("Good, So you are not a coward.", "red");
+                return "Good, so you are not a coward.";
             }
-            else if (input == "N")
+            else 
             {
+                return "Enjoy your slumber...COWARD!";
                 Console.Clear();
-                Game.Dialog("Enjoy your slumber...COWARD!", "red");
                 Game.GameOver();
             }
 
@@ -272,7 +278,8 @@ namespace Voidwalker
 
 ", "green");
 
-                PlayerItems.Add("knife");
+                Weapon knife = new Weapon();
+                PlayerItems.Add(knife);
                 ; Console.WriteLine(PartOne[5]);
                 Console.WriteLine("Press ENTER to continue...");
                 Console.ReadKey();
@@ -315,7 +322,7 @@ namespace Voidwalker
         }
 
         // this method initiates the final battle in which the player will win or lose based on if
-        // if the PlayerItems list contains "knife"
+        // the PlayerItems list contains "knife"
 
         public static void FinalBattle()
             {
@@ -374,7 +381,7 @@ namespace Voidwalker
                 Console.WriteLine("Press ENTER to continue...");
                 Console.ReadKey();
 
-                if (PlayerItems.Contains("knife"))
+                if (PlayerItems.Contains(knife))
                 {
                     Console.WriteLine("You defeat the figure with your newly found knife. Congratulations, you have survived....For now.. Press Enter to continue..");
                     Console.ReadKey();
@@ -395,7 +402,9 @@ namespace Voidwalker
                 }
            
     }
-        public static List<string> PlayerItems = new List<string>();
+
+        // list of items the player acquires
+        public static List<Item> PlayerItems = new List<Item>();
     }
 
 }
