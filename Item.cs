@@ -12,6 +12,7 @@ public  class Weapon : Item
 {
 	int Durability;
 
+	
 }
 
 

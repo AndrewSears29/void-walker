@@ -173,7 +173,7 @@ namespace Voidwalker
         // this method contains all of the functionality to take the player through
         // the paths contained in PartOne array
 
-        public static void SecondChoice()
+        public static void SecondChoice(Weapon knife)
         {
             string input = "";
             Game.Visuals(@"
@@ -278,7 +278,7 @@ namespace Voidwalker
 
 ", "green");
 
-                Weapon knife = new Weapon();
+                
                 PlayerItems.Add(knife);
                 ; Console.WriteLine(PartOne[5]);
                 Console.WriteLine("Press ENTER to continue...");
@@ -324,7 +324,7 @@ namespace Voidwalker
         // this method initiates the final battle in which the player will win or lose based on if
         // the PlayerItems list contains "knife"
 
-        public static void FinalBattle()
+        public static void FinalBattle(Weapon knife)
             {
                 Console.WriteLine("A gruesome figure appears. It looks dead but it isn't.");
                 Console.ReadKey();

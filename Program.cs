@@ -23,6 +23,7 @@ namespace Voidwalker
             Console.WriteLine("Press ENTER to continue...");
             Console.ReadKey();
             Console.Clear();
+            Weapon knife = new Weapon();
             Game.SecondChoice();
             Game.FinalBattle();
         }
