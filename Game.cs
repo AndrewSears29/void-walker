@@ -163,8 +163,7 @@ namespace Voidwalker
             else 
             {
                 return "Enjoy your slumber...COWARD!";
-                Console.Clear();
-                Game.GameOver();
+                
             }
 
 
@@ -173,7 +172,7 @@ namespace Voidwalker
         // this method contains all of the functionality to take the player through
         // the paths contained in PartOne array
 
-        public static void SecondChoice(Weapon knife)
+        public static void SecondChoice(Item knife)
         {
             string input = "";
             Game.Visuals(@"

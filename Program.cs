@@ -17,6 +17,8 @@ namespace Voidwalker
             Console.WriteLine();
             Game.Dialog("Here... Take this.", "red");
             Item flashlight = new Item();
+            flashlight.Weight = 5;
+            flashlight.Power = 1;
             Console.WriteLine();
             Game.PlayerItems.Add(flashlight);
             Console.WriteLine("You got a Flashlight!");
@@ -24,8 +26,11 @@ namespace Voidwalker
             Console.ReadKey();
             Console.Clear();
             Weapon knife = new Weapon();
-            Game.SecondChoice();
-            Game.FinalBattle();
+            knife.Weight = 2;
+            knife.Power = 8;
+            knife.Durability = 4;
+            Game.SecondChoice(knife);
+            Game.FinalBattle(knife);
         }
 
     }

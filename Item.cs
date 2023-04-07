@@ -3,14 +3,14 @@ namespace Voidwalker;
 
 public  class Item
 {
-	int Weight;
-	int Power;
+	public int Weight;
+	public int Power;
 
 }
 
 public  class Weapon : Item
 {
-	int Durability;
+	public int Durability;
 
 	
 }
